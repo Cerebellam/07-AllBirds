@@ -1,4 +1,80 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Raleway";
+    background: rgb(242, 242, 242);
 }
+
+
+.header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 40px;
+    text-align: center;
+    padding: 40px 0 45px 0;
+}
+.header:hover{
+    background: white;
+    box-shadow: 0 -9px 46px 22px #d5d5d5ad;
+    transition: background 1s;
+
+}
+.header .menuLeft{
+    width: 30%;
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: auto auto;
+}
+.header .menuLeft .menuTabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .menuLeft .menuTabs .menuTab{
+    width: 25%;
+}
+.header .menuLeft .menuTabs .menuTab:hover a{
+   border-bottom: 2px solid black;
+    cursor: default;
+}
+.header .logo{
+    width: 35%;
+}
+.header .logo img{
+    height: 130%;
+}
+.header .menuRight{
+    width: 30%;
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: auto 0;
+}
+.header .menuRight .menuTabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .menuRight .menuTabs .menuTab{
+    width: 25%;
+    margin: auto 0;
+
+}
+.header .menuRight .menuTabs .menuTab img{
+    width: 35px;
+}
+.header .menuRight .menuTabs .menuTab:hover a{
+    border-bottom: 2px solid black;
+    cursor: default;
+}
+.header .shoppingCart{
+    width: calc(5% - 20px);
+    margin: auto 0;
+    padding-right:20px;
+}
+.header .shoppingCart img{
+    width: 30px;
+}
+

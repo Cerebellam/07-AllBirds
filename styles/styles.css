@@ -1,14 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: "Raleway";
+    font-family: "Poppins";
     background: rgb(242, 242, 242);
 }
 
 
 .header{
     width: 100%;
-    position: fixed;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -25,7 +24,7 @@ body{
 .header .menuLeft{
     width: 35%;
     font-size: 0.7em;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 2px;
     margin: auto 0;
 }
@@ -58,7 +57,7 @@ body{
 .header .menuRight{
     width: 35%;
     font-size: 0.7em;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 2px;
     margin: auto 0;
 }
@@ -105,5 +104,267 @@ body{
 }
 .header .shoppingCart img{
     width: 32px;
+}
+.productDetails{
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+.productDetails .productImage{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+}
+.productDetails .productSelectedImage{
+    width: calc(80% - 30px);
+    padding:0 30px 0 0;
+    max-width: 650px;
+
+}
+.productDetails .productSelectedImage img{
+    width: 100%;
+}
+.productDetails .productPreviewImages{
+    width: calc(20% - 80px);
+    padding:0 40px;
+    text-align: right;
+    margin-top: 20px;
+}
+.productDetails .productPreviewImages .productPreviewImage{
+    padding-top: 10px;
+    vertical-align: baseline;
+    margin: auto 0;
+}
+.productDetails .productPreviewImages .productPreviewImage:hover img{
+    border-bottom: 2px solid black;
+}
+.productDetails .productPreviewImages .productPreviewImage:hover:after{
+    display: block;
+}
+.productDetails .productPreviewImages .productPreviewImage img{
+    height: 60px;
+    border-bottom: 2px solid transparent;
+}
+.productDetails .productInformation{
+    width: calc(35% - 40px);
+    margin-top: 30px;
+    padding:0 20px;
+
+}
+.productDetails .productInformation .productName{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    max-width: 400px;
+}
+.productDetails .productInformation .productPrice{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 10px 0;
+}
+.productDetails .productInformation .productDescription{
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    padding: 10px 0;
+    line-height: 22px;
+    max-width: 400px;
+}
+.productDetails .productColors{
+    display: flex;
+    flex-wrap: wrap;
+}
+.productDetails .sectionTitle{
+    font-weight: 600;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+    width: 100%;
+}
+.productDetails .productColors .productColor{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
+}
+.productDetails .productColors .productColor.GreySole{
+    background: linear-gradient(140deg, #2D2C2F 50%, #8f8e8d 50%);
+}
+.productDetails .productColors .productColor.BlackSole{
+    background: black;
+}
+.productDetails .productColors .productColor.LightSole{
+    background: linear-gradient(140deg, #434343 50%, #8f8e8d 50%);
+}
+.productDetails .productColors .productColor.CreamSole{
+    background: #E8E5DA;
+    box-shadow: 0 0 0 0.03em #CBC8BD;
+}
+.productDetails .productColors .productColor.Shade{
+    background: linear-gradient(140deg, #4E5368 50%, #000000 50%);
+    box-shadow: 0 0 0 0.03em #CBC8BD;
+}
+.productDetails .productColors .productColor.Dusk{
+    background: linear-gradient(140deg, #C6A4A4 50%, #F2F0E3 50%);
+    box-shadow: 0 0 0 0.03em #CBC8BD;
+}
+.productDetails .productColors .productColor.Chili{
+    background: linear-gradient(140deg, #8F423B 50%, #F2F0E3 50%);
+    box-shadow: 0 0 0 0.03em #CBC8BD;
+}
+.productDetails .productColors .productColor.Sage{
+    background: linear-gradient(140deg, #8E826A 50%, #F2F0E3 50%);
+    box-shadow: 0 0 0 0.03em #CBC8BD;
+}
+.productDetails .productColors .productColor.Heather{
+    background: linear-gradient(140deg, #C3CBD9 50%, #F2F0E3 50%);
+    box-shadow: 0 0 0 0.03em #CBC8BD;
+}
+.productDetails .productColors .productColor.Olive{
+    background: linear-gradient(140deg, #534e42 50%, #8f8e8d 50%);
+}
+.productDetail .size{
+
+}
+.productDetails .size .sectionTitle {
+    padding-bottom: 10px;
+}
+.productDetails .size .sectionTitle a{
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+.forms{
+    display: flex;
+    flex-wrap: wrap;
+}
+.forms .size{
+    width: 50%;
+}
+.forms .size select{
+    width: calc(100% - 22px);
+    height: 56px;
+    padding: 0 0 0 20px;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    outline: none;
+    background: white;
+    margin: 0;
+    -webkit-appearance:none;
+    background-image: url("..//icons/arrowDown.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 86% 51%;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 13px;
+}
+.forms .quantity{
+    width: calc(50% - 20px);
+    padding-right: 20px;
+}
+.forms .quantity .sectionTitle{
+    padding-bottom: 10px;
+}
+.forms .quantity .quantityForm{
+    display: flex;
+    flex-wrap: wrap;
+    height: 56px;
+    width: 100%;
+}
+.forms .quantity .quantityForm button{
+    -webkit-appearance:none;
+    border: none;
+    background: white;
+}
+.forms .quantity .quantityForm .minus{
+    width: 20%;
+    height: 56px;
+}
+.forms .quantity .quantityForm .minus button{
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 2px;
+    outline: none;
+}
+.forms .quantity .quantityForm .plus{
+    width: 20%;
+    height: 56px;
+
+}
+.forms .quantity .quantityForm .plus button{
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 2px;
+    outline: none;
+
+}
+.forms .quantity .quantityForm .quantityInput{
+    width: 60%;
+    height: 52px;
+}
+.forms .quantity .quantityForm .quantityInput input{
+    border: none;
+    -webkit-appearance:none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-top:1px solid lightgray ;
+    border-bottom: 1px solid lightgray;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 13px;
+    color: black;
+    outline: none;
+}
+.productDetails .sizeUpText{
+    font-size: 0.7em;
+    font-style: oblique;
+    letter-spacing: 0.05em;
+    margin: 20px 0;
+}
+.productDetails .addToCartButton{
+    width: calc(100% - 20px);
+    padding-right: 20px;
+}
+.productDetails .addToCartButton button{
+    width: 100%;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: white;
+    background: black;
+    border: 2px solid black;
+    height: 70px;
+    outline: none;
+}
+.productDetails .addToCartButton:after button{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: black;
+    margin: 10px 0;
+}
+.productDetails .addToCartButton:hover button{
+    color: black;
+    font-weight: 600;
+    background: transparent;
+    transition: color,background 0.6s;
 }
 

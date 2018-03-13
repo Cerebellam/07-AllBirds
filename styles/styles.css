@@ -458,7 +458,43 @@ body{
     text-align: center;
     margin: auto auto;
     padding: 260px 0;
-
+}
+.woolSection{
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+.woolSection .title{
+    padding-top:30px;
+}
+.woolSection .section .subTitle{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 15px;
+    letter-spacing: 0.07em;
+    font-weight: 300;
+    line-height: 27px;
+    max-width: 530px;
+    margin: auto auto;
+}
+.woolSection .section{
+    width: calc(50% - 60px);
+    margin: auto 30px;
+    padding-bottom: 60px;
+}
+.woolSection .section.Left .woolGif{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.woolSection .section.Left img{
+    width: 150px;
+}
+.woolSection .section.Right{
+    padding-top: 30px;
+}
+.woolSection .section.Right img{
+    width: 80%;
 }
 
 

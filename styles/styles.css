@@ -697,6 +697,26 @@ body{
     color: white;
     transition: color .5s;
 }
+.copyright{
+    background: #192126;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 120px;
+}
+.copyright img{
+    width: 40px;
+    opacity: 0.8;
+    margin-left: 65px;
+}
+.copyright .copyrightText{
+   color: #ccc;
+    font-size: 0.7em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-align: right;
+    margin: auto 65px;
+}
 
 
 

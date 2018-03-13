@@ -601,6 +601,102 @@ body{
     background: white;
     transition: color,background 0.6s;
 }
+.footer{
+    background: #202930;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+.footer .contactSection{
+    width: calc(40% - 60px);
+    margin-left: 60px;
+}
+.footer .contactSection .emailForm{
+    width: 100%;
+}
+.footer .contactSection .emailForm input{
+    background: transparent;
+    width: 240px;
+    height: 60px;
+    border: 1px solid #8f9497;
+    margin-top: 2px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.75em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    outline: none;
+    color: #ccc;
+}
+.footer .contactSection .emailForm button{
+    height: 64px;
+    width: 110px;
+    color: #202930;
+    background: #8f9497;
+    border: 2px solid #8f9497;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-family: 'Poppins';
+    margin-left: -5px;
+    padding-top: 2px;
+    outline: none;
+}
+.footer .contactSection .socialMedia{
+    width: 100%;
+}
+.footer .contactSection .socialMedia img{
+    width: 18px;
+    opacity: 0.8;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.footer .contactSection .socialMedia img:hover{
+    opacity: 1;
+    transition: opacity .4s;
+}
+.footer .contactSection .countries{
+    width: 100%;
+}
+.footer .contactSection .countries img{
+    width: 38px;
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.footer .contactSection .countries img:hover{
+    opacity: 1;
+    transition: opacity .4s;
+}
+.footer .footerTabs{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .footerTabs .footerColumn{
+    width: calc(25% - 20px);
+    flex-direction: column;
+    margin-left: 20px;
+}
+.footer .footerTabs .footerTab.Title{
+    font-weight: 600;
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+    padding-bottom: 5px;
+}
+.footer .footerTabs .footerTab{
+    font-size: 0.75em;
+    font-weight: 300;
+    color: #ccc;
+    letter-spacing: 0.04em;
+    line-height: 24px;
+    margin-right:10px;
+}
+.footer .footerTabs .footerTab:hover{
+    color: white;
+    transition: color .5s;
+}
 
 
 

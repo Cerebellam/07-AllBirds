@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Poppins";
-    background: rgb(242, 242, 242);
+    background: rgb(249, 249, 249);
 }
 
 
@@ -31,8 +31,6 @@ body{
 .header .menuLeft .menuTabs{
     display: flex;
     flex-wrap: wrap;
-
-
 }
 .header .menuLeft .menuTabs .menuTab{
     width: 22%;
@@ -47,6 +45,68 @@ body{
 .header .menuLeft .menuTabs .menuTab:hover a{
    border-bottom: 2px solid black;
     cursor: default;
+}
+.header .menuTabs .menuTab .bridge{
+    background: transparent;
+    position: absolute;
+    width: 100px;
+    height: 80px;
+}
+.header .menuTabs .menuTab .dropDown{
+    position: absolute;
+    background: #f2f2f2;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 125px;
+    z-index: 2;
+    height: 400px;
+}
+.header .menuTabs .menuTab:hover .dropDown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header .menuTabs .menuTab .dropDown .dropDownShoe{
+    width: 50%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.header .menuTabs .menuTab .dropDown .dropDownShoe img{
+    width: 300px;
+}
+.header .menuTabs .menuTab .dropDown .dropDownShoe .shoeTitle{
+    font-weight: 600;
+    color: #cccccc;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.header .menuTabs .menuTab .dropDown .dropDownShoe:hover img{
+    width: 320px;
+    transition: scale(1);
+    transition: .3s ease-in-out
+}
+.header .menuTabs .menuTab .dropDown .dropDownShoe:hover .shoeTitle{
+    color: black;
+    transition: color .5s;
+}
+.header .menuTabs .menuTab .dropDown .arrowUp{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 350px;
+}
+.header .menuTabs .menuTab .dropDown .arrowUp img{
+    width: 26px;
+    opacity: .5;
+}
+.header .menuTabs .menuTab .dropDown .arrowUp:hover img{
+    opacity: .8;
+    transition: opacity .5s;
 }
 .header .logo{
     width: 25%;

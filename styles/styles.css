@@ -9,50 +9,85 @@ body{
 .header{
     width: 100%;
     display: flex;
+}
+/*.header:hover{
+    background: white;
+    box-shadow: 0 -9px 46px 22px #d5d5d5ad;
+    transition: background, box-shadow .8s;
+}*/
+
+.header .mobileMenu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+.header .mobileMenu .hamburger{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.header .mobileMenu .hamburger .icon{
+    margin-left: 35px;
+    width: 10%;
+    display: none;
+}
+.header .mobileMenu .hamburger .icon .line{
+    background: #191a1d;
+    width: 22px;
+    height: 2px;
+    margin: 6px auto;
+}
+.header .mobileMenu .mobileLogo{
+    display: none;
+    width: 80%;
+    margin-left: 10px;
+    text-align: center;
+}
+.header .mobileMenu .mobileLogo img{
+    width: 130px;
+}
+.header .mobileMenu .menu{
+    display: flex;
     flex-wrap: wrap;
     align-content: center;
     height: 40px;
     text-align: center;
     padding: 40px 0 45px 0;
+    width: 100%;
 }
-.header:hover{
-    background: white;
-    box-shadow: 0 -9px 46px 22px #d5d5d5ad;
-    transition: background, box-shadow .8s;
-
-}
-.header .menuLeft{
-    width: 35%;
+.header .mobileMenu .menu .menuLeft{
+    width: 40%;
     font-size: 0.7em;
     font-weight: 600;
     letter-spacing: 2px;
     margin: auto 0;
 }
-.header .menuLeft .menuTabs{
+.header .mobileMenu .menu .menuLeft .menuTabs{
     display: flex;
     flex-wrap: wrap;
 }
-.header .menuLeft .menuTabs .menuTab{
+.header .mobileMenu .menu .menuLeft .menuTabs .menuTab{
     width: 22%;
 }
-.header .menuLeft .menuTabs .menuTab.Large{
+.header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Large{
     width: 34%;
 }
-.header .menuLeft .menuTabs .menuTab a img{
+.header .mobileMenu .menu .menuLeft .menuTabs .menuTab a img{
     width: 10px;
     vertical-align: middle;
 }
-.header .menuLeft .menuTabs .menuTab:hover a{
+.header .mobileMenu .menu .menuLeft .menuTabs .menuTab:hover a{
    border-bottom: 2px solid black;
     cursor: default;
 }
-.header .menuTabs .menuTab .bridge{
+.header .mobileMenu .menu .menuTabs .menuTab .bridge{
     background: transparent;
     position: absolute;
     width: 100px;
     height: 80px;
 }
-.header .menuTabs .menuTab .dropDown{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown{
     position: absolute;
     background: #f2f2f2;
     display: none;
@@ -62,21 +97,21 @@ body{
     z-index: 2;
     height: 400px;
 }
-.header .menuTabs .menuTab:hover .dropDown{
+.header .mobileMenu .menu .menuTabs .menuTab:hover .dropDown{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.header .menuTabs .menuTab .dropDown .dropDownShoe{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe{
     width: 50%;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
 }
-.header .menuTabs .menuTab .dropDown .dropDownShoe img{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe img{
     width: 300px;
 }
-.header .menuTabs .menuTab .dropDown .dropDownShoe .shoeTitle{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe .shoeTitle{
     font-weight: 600;
     color: #cccccc;
     letter-spacing: 2px;
@@ -85,75 +120,75 @@ body{
     text-align: center;
 
 }
-.header .menuTabs .menuTab .dropDown .dropDownShoe:hover img{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe:hover img{
     width: 320px;
     transition: scale(1);
     transition: .3s ease-in-out
 }
-.header .menuTabs .menuTab .dropDown .dropDownShoe:hover .shoeTitle{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe:hover .shoeTitle{
     color: black;
     transition: color .5s;
 }
-.header .menuTabs .menuTab .dropDown .arrowUp{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown .arrowUp{
     width: 100%;
     position: absolute;
     z-index: 3;
     top: 350px;
 }
-.header .menuTabs .menuTab .dropDown .arrowUp img{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown .arrowUp img{
     width: 26px;
     opacity: .5;
 }
-.header .menuTabs .menuTab .dropDown .arrowUp:hover img{
+.header .mobileMenu .menu .menuTabs .menuTab .dropDown .arrowUp:hover img{
     opacity: .8;
     transition: opacity .5s;
 }
-.header .logo{
-    width: 25%;
+.header .mobileMenu .menu .logo{
+    width: 22%;
 }
-.header .logo img{
+.header .mobileMenu .menu .logo img{
     height: 130%;
 }
-.header .menuRight{
-    width: 35%;
+.header .mobileMenu .menu .menuRight{
+    width: 38%;
     font-size: 0.7em;
     font-weight: 600;
     letter-spacing: 2px;
     margin: auto 0;
 }
-.header .menuRight .menuTabs{
+.header .mobileMenu .menu .menuRight .menuTabs{
     display: flex;
     flex-wrap: wrap;
 }
-.header .menuRight .menuTabs .menuTab{
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab{
     width: 25%;
     margin: auto 0;
 }
-.header .menuRight .menuTabs:last-child{
+.header .mobileMenu .menu .menuRight .menuTabs:last-child{
     margin-right: 25px;
 }
-.header .menuRight .menuTabs .menuTab a img{
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab a img{
     width: 10px;
     vertical-align: middle;
 }
 
-.header .menuRight .menuTabs .menuTab.US{
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab.US{
     display: flex;
     justify-content: flex-end;
 
 }
-.header .menuRight .menuTabs .menuTab.US img{
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab.US img{
     width: 10px;
     margin-left: 10px;
     margin-top: 0;
     padding-right: 10px;
 }
-.header .menuRight .menuTabs .menuTab  .usIcon img{
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab  .usIcon img{
     width: 35px;
     padding-right: 0;
     margin-top: 5px;
 }
-.header .menuRight .menuTabs .menuTab:hover a{
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab:hover a{
     border-bottom: 2px solid black;
     cursor: default;
 }
@@ -806,6 +841,38 @@ body{
     letter-spacing: 0.05em;
     text-align: right;
     margin: auto 65px;
+}
+
+
+@media (max-width: 640px) {
+    body{
+        background: #f2f2f2;
+    }
+    .header{
+        padding: 20px 0;
+    }
+    .header .mobileMenu .menu{
+        position: absolute;
+        display: none;
+    }
+    .header .mobileMenu .hamburger .icon{
+        display: block;
+    }
+    .header .mobileMenu .hamburger:hover .menu{
+        display: block;
+    }
+    .header .mobileMenu .mobileLogo{
+        display: block;
+    }
+    .header .mobileMenu .menu .logo{
+        display: none;
+    }
+    .header .shoppingCart{
+        width:calc(5% - 35px);
+        text-align: right;
+        margin-right: 35px;
+        padding-right:0;
+    }
 }
 
 

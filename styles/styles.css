@@ -31,6 +31,7 @@ body{
     margin-left: 35px;
     width: 10%;
     display: none;
+    margin-top: 3px;
 }
 .header .mobileMenu .hamburger .icon .line{
     background: #191a1d;
@@ -43,9 +44,10 @@ body{
     width: 80%;
     margin-left: 10px;
     text-align: center;
+
 }
 .header .mobileMenu .mobileLogo img{
-    width: 130px;
+    width: 120px;
 }
 .header .mobileMenu .menu{
     display: flex;
@@ -73,7 +75,20 @@ body{
 .header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Large{
     width: 34%;
 }
-.header .mobileMenu .menu .menuLeft .menuTabs .menuTab a img{
+.header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Number{
+    display: none;
+}
+.header .mobileMenu .menu .menuLeft .menuTabs .menuTab .menuArrow{
+    display: inline;
+}
+.header .mobileMenu .menu .menuLeft .menuTabs .menuTab .menuArrow img{
+    width: 10px;
+    vertical-align: middle;
+}
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab .menuArrow{
+    display: inline;
+}
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab .menuArrow img{
     width: 10px;
     vertical-align: middle;
 }
@@ -182,6 +197,9 @@ body{
     margin-left: 10px;
     margin-top: 0;
     padding-right: 10px;
+}
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab.US .menuArrow img{
+    margin-top: 10px;
 }
 .header .mobileMenu .menu .menuRight .menuTabs .menuTab  .usIcon img{
     width: 35px;
@@ -854,6 +872,10 @@ body{
     .header .mobileMenu .menu{
         position: absolute;
         display: none;
+        background: white;
+        top: 75px;
+        height: 670px;
+        padding: 10px 0 45px 0;
     }
     .header .mobileMenu .hamburger .icon{
         display: block;
@@ -868,10 +890,93 @@ body{
         display: none;
     }
     .header .shoppingCart{
-        width:calc(5% - 35px);
+        width: 5%;
         text-align: right;
-        margin-right: 35px;
+        margin-right: 50px;
         padding-right:0;
+        margin-top: 3px;
+    }
+
+
+    .header .mobileMenu .menu .menuLeft{
+        width: 100%;
+        font-size: 0.7em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: auto 0;
+    }
+    .header .mobileMenu .menu .menuLeft .menuTabs{
+        display: block;
+        flex-wrap: nowrap;
+    }
+    .header .mobileMenu .menu .menuTabs img{
+
+    }
+    .header .mobileMenu .menu .menuLeft .menuTabs .menuTab{
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        border-bottom: 1px solid #e2e2e2;
+        text-align: center;
+    }
+    .header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Large{
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+    .header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Number{
+        display: block;
+    }
+    .header .mobileMenu .menu .menuRight{
+        width: 100%;
+        font-size: 0.7em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: auto 0;
+    }
+    .header .mobileMenu .menu .menuRight .menuTabs{
+        display: flex;
+        width: 100%;
+    }
+    .header .mobileMenu .menu .menuRight .menuTabs .menuTab{
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .header .mobileMenu .menu .menuRight .menuTabs .menuTab:last-child{
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        border-bottom: none;
+    }
+    .header .mobileMenu .menu .menuRight .menuTabs .menuTab.US{
+        display: flex;
+        justify-content: center;
+
+    }
+    .header .mobileMenu .menu .menuTabs{
+        display: flex;
+        width: 100%;
+    }
+    .header .mobileMenu .menu .menuTabs .menuTab{
+        padding: 30px 0;
+    }
+    .header .mobileMenu .menu .menuTabs .menuTab .menuArrow{
+        position: absolute;
+        right: 8%;
+    }
+    .header .mobileMenu .menu .menuTabs .menuTab .menuArrow img{
+        width: 10px;
+        vertical-align: middle;
+    }
+    .header .mobileMenu .menu .menuTabs .menuTab:hover .dropDown{
+        display: none;
+    }
+
+
+    .instagramSection .slideShow .slideShowImages{
+        overflow: hidden;
+    }
+    .shoeStructureSection .shoe .title{
+        padding-left: 0px;
+
     }
 }
 

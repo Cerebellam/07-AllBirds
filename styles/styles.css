@@ -39,14 +39,14 @@ body{
     height: 2px;
     margin: 6px auto;
 }
-.header .mobileMenu .mobileLogo{
+.header .mobileLogo{
     display: none;
     width: 80%;
     margin-left: 10px;
     text-align: center;
 
 }
-.header .mobileMenu .mobileLogo img{
+.header .mobileLogo img{
     width: 120px;
 }
 .header .mobileMenu .menu{
@@ -75,7 +75,7 @@ body{
 .header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Large{
     width: 34%;
 }
-.header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Number{
+.header .mobileMenu .menu .menuRight .menuTabs .menuTab.Number{
     display: none;
 }
 .header .mobileMenu .menu .menuLeft .menuTabs .menuTab .menuArrow{
@@ -209,6 +209,16 @@ body{
 .header .mobileMenu .menu .menuRight .menuTabs .menuTab:hover a{
     border-bottom: 2px solid black;
     cursor: default;
+}
+.header .mobileLogo{
+    display: none;
+    width: 80%;
+    margin-left: 10px;
+    text-align: center;
+
+}
+.header .mobileLogo img{
+    width: 120px;
 }
 .header .shoppingCart{
     width: calc(5% - 20px);
@@ -869,6 +879,9 @@ body{
     .header{
         padding: 20px 0;
     }
+    .header .mobileMenu{
+        width: 10%;
+    }
     .header .mobileMenu .menu{
         position: absolute;
         display: none;
@@ -883,7 +896,7 @@ body{
     .header .mobileMenu .hamburger:hover .menu{
         display: block;
     }
-    .header .mobileMenu .mobileLogo{
+    .header .mobileLogo{
         display: block;
     }
     .header .mobileMenu .menu .logo{
@@ -922,7 +935,7 @@ body{
         width: calc(100% - 40px);
         margin: 0 20px;
     }
-    .header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Number{
+    .header .mobileMenu .menu .menuRight .menuTabs .menuTab.Number{
         display: block;
     }
     .header .mobileMenu .menu .menuRight{
@@ -949,7 +962,6 @@ body{
     .header .mobileMenu .menu .menuRight .menuTabs .menuTab.US{
         display: flex;
         justify-content: center;
-
     }
     .header .mobileMenu .menu .menuTabs{
         display: flex;
@@ -968,6 +980,9 @@ body{
     }
     .header .mobileMenu .menu .menuTabs .menuTab:hover .dropDown{
         display: none;
+    }
+    .header .mobileLogo{
+        display: block;
     }
 
 

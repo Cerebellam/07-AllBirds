@@ -364,10 +364,11 @@ body{
     flex-wrap: wrap;
 }
 .forms .size{
-    width: 50%;
+    width: calc(50% - 5px);
+    margin: 0 5px 0 0;
 }
 .forms .size select{
-    width: calc(100% - 22px);
+    width: calc(100% - 2px);
     height: 56px;
     padding: 0 0 0 20px;
     border-radius: 2px;
@@ -1052,6 +1053,11 @@ body{
     .forms .quantity{
         width: 50%;
         padding-right: 0;
+    }
+    .productDetails .addToCartButton{
+        width: 100%;
+        padding-right: 0;
+       
     }
 }
 

@@ -273,7 +273,6 @@ body{
     width: calc(35% - 40px);
     margin-top: 30px;
     padding:0 20px;
-
 }
 .productDetails .productInformation .productName{
     font-size: 40px;
@@ -984,14 +983,75 @@ body{
     .header .mobileLogo{
         display: block;
     }
-
-
     .instagramSection .slideShow .slideShowImages{
         overflow: hidden;
     }
     .shoeStructureSection .shoe .title{
         padding-left: 0px;
+    }
 
+    .productDetails{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productDetails .productImage{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: row;
+        width: 100%;
+    }
+    .productDetails .productPreviewImages{
+        width: calc(100% - 100px);
+        padding:0 50px;
+        text-align: center;
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productDetails .productPreviewImages .productPreviewImage{
+        width: 14.28%;
+    }
+    .productDetails .productSelectedImage{
+        width: calc(100% - 80px);
+        padding:0 40px;
+        max-width: 650px;
+    }
+    .productDetails .productInformation {
+        width: calc(65% - 40px);
+        margin: 50px auto;
+        padding:0 20px;
+        background: white;
+        border-radius: 5px;
+    }
+    .productDetails .productInformation .productInformationMobile{
+        width: calc(100% - 40px);
+        padding:0 20px;
+        text-align: center;
+    }
+    .productDetails .productInformation .productInformationMobile .productName{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 42px;
+        max-width: 400px;
+        margin-top: 40px;
+    }
+    .productDetails .productColors{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productDetails .productColors .productColor{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin: 10px 10px 10px 0;
+    }
+    .forms .sectionTitle{
+        text-align: left;
+    }
+    .forms .quantity{
+        width: 50%;
+        padding-right: 0;
     }
 }
 

@@ -1073,6 +1073,16 @@ body{
         width: calc(33.33% - 10px);
         margin: 0 5px;
     }
+    .benefitSection .icons{
+        margin: 0 50px;
+    }
+    .benefitSection .icons .icon{
+        width: 50%;
+    }
+    .benefitSection .icons .icon .iconTitle{
+        font-size: 15px;
+        
+    }
 }
 
 

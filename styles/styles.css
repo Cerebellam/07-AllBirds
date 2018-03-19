@@ -1057,7 +1057,21 @@ body{
     .productDetails .addToCartButton{
         width: 100%;
         padding-right: 0;
-       
+
+    }
+    .instagramSection .subTitle{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .instagramSection .slideShow .slideShowImages .instagramIcon{
+        top: 2006px;
+    }
+    .instagramSection .slideShow .slideShowImages .slideShowImage.Hidden{
+        display: none;
+    }
+    .instagramSection .slideShow .slideShowImages .slideShowImage{
+        width: calc(33.33% - 10px);
+        margin: 0 5px;
     }
 }
 

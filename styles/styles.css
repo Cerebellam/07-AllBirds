@@ -909,8 +909,6 @@ body{
         padding-right:0;
         margin-top: 3px;
     }
-
-
     .header .mobileMenu .menu .menuLeft{
         width: 100%;
         font-size: 0.7em;
@@ -1081,35 +1079,13 @@ body{
     }
     .benefitSection .icons .icon .iconTitle{
         font-size: 15px;
-
     }
     .banner .bannerText{
         font-size: 24px;
-        color: rgb(255, 255, 255);
-        font-weight: 500;
-        letter-spacing: 0.03em;
         max-width: 550px;
-        text-align: center;
-        margin: auto auto;
-        padding: 260px 0;
     }
     .woolSection{
-        display: flex;
         flex-wrap: wrap-reverse;
-        background: white;
-    }
-    .woolSection .title{
-        padding-top:30px;
-    }
-    .woolSection .section .subTitle{
-        text-align: center;
-        padding-top: 25px;
-        font-size: 15px;
-        letter-spacing: 0.07em;
-        font-weight: 300;
-        line-height: 27px;
-        max-width: 530px;
-        margin: auto auto;
     }
     .woolSection .section{
         width: calc(100% - 60px);
@@ -1117,15 +1093,10 @@ body{
         padding-bottom: 50px;
     }
     .woolSection .section.Left{
-        padding-bottom: 120px;
+        padding-bottom: 0;
     }
     .woolSection .section.Left .woolGif{
-        text-align: center;
-        margin: 0 auto;
         padding-top: 0;
-    }
-    .woolSection .section.Left img{
-        width: 150px;
     }
     .woolSection .section.Right{
         padding-top: 80px;
@@ -1133,7 +1104,101 @@ body{
     }
     .woolSection .section.Right img{
         width: 70%;
+    }
 
+
+
+
+    .shoeStructureSection{
+        background: linear-gradient(189deg, #fff 15%, #e8eeee 7%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .shoeStructureSection .shoe{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .shoeStructureSection .shoe .shoeImage{
+        width: 50%;
+    }
+    .shoeStructureSection .shoe .shoeDescription{
+        width: calc(50% - 60px);
+        margin-top: 75px;
+        padding: 0 30px;
+    }
+    .shoeStructureSection .shoe.Upper{
+        margin-top: 160px;
+    }
+    .shoeStructureSection .shoe.Insole{
+        margin-top: -20px;
+        flex-direction: row;
+    }
+    .shoeStructureSection .shoe.Sole{
+        margin-top: -50px;
+        padding-bottom: 80px;
+    }
+    .shoeStructureSection .shoe img{
+        width: 55%;
+    }
+    .shoeStructureSection .shoe .title{
+        text-align: left;
+        font-size: 22px;
+        margin: auto auto;
+        padding-left: 5px;
+        padding-top: 0;
+    }
+    .shoeStructureSection .shoe .description{
+        text-align: left;
+        margin: 10px -32px;
+        max-width: 310px;
+        font-weight: 300;
+        color: #333333;
+        line-height: 24px;
+        letter-spacing: .05em;
+        font-size: 15px;
+        padding-bottom: 120px;
+    }
+    .shoeStructureSection .shoe.Sole .description{
+        max-width: 300px;
+    }
+    .shoeStructureSection .shoe .description li{
+        padding-bottom: 20px;
+    }
+    .shoeStructureSection .shopInsoles{
+        text-align: center;
+    }
+    .shoeStructureSection .shopInsoles button{
+        width: 88%;
+        font-family: "Poppins";
+        font-size: 14px;
+        letter-spacing: 3px;
+        border: 2px solid black;
+        height: 60px;
+        outline: none;
+        color: black;
+        font-weight: 600;
+        background: transparent;
+    }
+    .shoeStructureSection .shopInsoles button:hover{
+        font-weight: 500;
+        color: white;
+        background: black;
+        transition: color,background 0.6s;
+    }
+    .learnMoreSection .title{
+        color: white;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 38px;
+        max-width: 500px;
+        margin: auto auto;
+        line-height: 48px;
     }
 }
 

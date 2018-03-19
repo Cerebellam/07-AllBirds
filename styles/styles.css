@@ -1169,6 +1169,41 @@ body{
         max-width: 500px;
         line-height: 48px;
     }
+    .footer .contactSection{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    .footer .footerTabs{
+        width: 100%;
+        text-align: center;
+    }
+    .footer .footerTabs .footerColumn{
+        width: calc(25% - 35px);
+        flex-direction: column;
+        margin-left: 35px;
+        text-align: left;
+    }
+    .footer .footerTabs .footerTab.Title{
+        font-weight: 600;
+        color: white;
+        font-size: 0.8em;
+        letter-spacing: 0.08em;
+        padding-bottom: 5px;
+    }
+    .footer .footerTabs .footerTab{
+        font-size: 0.75em;
+        font-weight: 300;
+        color: #ccc;
+        letter-spacing: 0.04em;
+        line-height: 24px;
+        margin-right:10px;
+    }
+    .footer .footerTabs .footerTab:hover{
+        color: white;
+        transition: color .5s;
+    }
 }
 
 

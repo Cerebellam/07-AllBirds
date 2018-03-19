@@ -872,7 +872,7 @@ body{
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 786px) {
     body{
         background: #f2f2f2;
     }
@@ -1062,7 +1062,7 @@ body{
         margin: 0 auto;
     }
     .instagramSection .slideShow .slideShowImages .instagramIcon{
-        top: 2006px;
+        top: 2098px;
     }
     .instagramSection .slideShow .slideShowImages .slideShowImage.Hidden{
         display: none;
@@ -1104,10 +1104,6 @@ body{
     .woolSection .section.Right img{
         width: 70%;
     }
-
-
-
-
     .shoeStructureSection{
         background: linear-gradient(189deg, #fff 15%, #e8eeee 7%);
         display: flex;
@@ -1204,6 +1200,12 @@ body{
         color: white;
         transition: color .5s;
     }
+}
+@media (max-width: 640px) {
+    .instagramSection .slideShow .slideShowImages .instagramIcon{
+        top: 2006px;
+    }
+
 }
 
 

@@ -73,23 +73,16 @@ body{
 .header .mobileMenu .menu .menuLeft .menuTabs .menuTab{
     width: 22%;
 }
-.header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Large{
+.header .mobileMenu .menu .menuTab.Large{
     width: 34%;
 }
-.header .mobileMenu .menu .menuRight .menuTabs .menuTab.Number{
+.header .mobileMenu .menu .menuTab.Number{
     display: none;
 }
-.header .mobileMenu .menu .menuLeft .menuTabs .menuTab .menuArrow{
+.header .mobileMenu .menu .menuArrow{
     display: inline;
 }
-.header .mobileMenu .menu .menuLeft .menuTabs .menuTab .menuArrow img{
-    width: 10px;
-    vertical-align: middle;
-}
-.header .mobileMenu .menu .menuRight .menuTabs .menuTab .menuArrow{
-    display: inline;
-}
-.header .mobileMenu .menu .menuRight .menuTabs .menuTab .menuArrow img{
+.header .mobileMenu .menu .menuArrow img{
     width: 10px;
     vertical-align: middle;
 }

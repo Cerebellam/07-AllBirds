@@ -64,6 +64,7 @@ body{
     font-weight: 600;
     letter-spacing: 2px;
     margin: auto 0;
+    max-width: 500px;
 }
 .header .mobileMenu .menu .menuLeft .menuTabs{
     display: flex;
@@ -170,10 +171,14 @@ body{
     font-weight: 600;
     letter-spacing: 2px;
     margin: auto 0;
+    max-width: 500px;
+
+
 }
 .header .mobileMenu .menu .menuRight .menuTabs{
     display: flex;
     flex-wrap: wrap;
+
 }
 .header .mobileMenu .menu .menuRight .menuTabs .menuTab{
     width: 25%;
@@ -221,7 +226,6 @@ body{
     width: 120px;
 }
 .header .shoppingCart{
-    width: calc(5% - 20px);
     margin: auto 0;
     padding-right:20px;
 }
@@ -366,6 +370,7 @@ body{
 .forms .size{
     width: calc(50% - 5px);
     margin: 0 5px 0 0;
+    max-width: 200px;
 }
 .forms .size select{
     width: calc(100% - 2px);
@@ -388,6 +393,7 @@ body{
 .forms .quantity{
     width: calc(50% - 20px);
     padding-right: 20px;
+    max-width: 200px;
 }
 .forms .quantity .sectionTitle{
     padding-bottom: 10px;
@@ -440,6 +446,7 @@ body{
 .forms .quantity .quantityForm .quantityInput{
     width: 60%;
     height: 52px;
+
 }
 .forms .quantity .quantityForm .quantityInput input{
     border: none;
@@ -465,6 +472,7 @@ body{
     width: calc(100% - 20px);
     padding-right: 20px;
     margin-bottom: 60px;
+    max-width: 400px;
 }
 .productDetails .addToCartButton button{
     width: 100%;
@@ -593,7 +601,8 @@ body{
     background-repeat: no-repeat;
     width: 100%;
     height: 680px;
-    background-position: center center;
+    background-position: center center fixed;
+    background-size: cover;
 }
 .banner .bannerText{
     font-size: 28px;
@@ -654,6 +663,7 @@ body{
     width: 33.33%;
     margin: 0 auto;
     text-align: center;
+    max-width: 400px;
 }
 .shoeStructureSection .shoe.Insole{
     margin-top: 80px;
@@ -706,12 +716,9 @@ body{
     transition: color,background 0.6s;
 }
 .learnMoreSection{
-    background-image: url("..//images/sheepBanner.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
+    background: url("..//images/sheepBanner.jpg") no-repeat center center fixed;
     height: 720px;
-    background-position: center center;
-
+    background-size: cover;
 }
 .learnMoreSection .subTitle{
     color: white;
@@ -825,6 +832,7 @@ body{
     width: 60%;
     display: flex;
     flex-wrap: wrap;
+
 }
 .footer .footerTabs .footerColumn{
     width: calc(25% - 20px);

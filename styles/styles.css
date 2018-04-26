@@ -66,14 +66,14 @@ body{
     margin: auto 0;
     max-width: 500px;
 }
-.header .mobileMenu .menu .menuLeft .menuTabs{
+.header .mobileMenu .menu .menuTabs{
     display: flex;
     flex-wrap: wrap;
 }
 .header .mobileMenu .menu .menuLeft .menuTabs .menuTab{
     width: 22%;
 }
-.header .mobileMenu .menu .menuTab.Large{
+.header .mobileMenu .menu .menuLeft .menuTab.Large{
     width: 34%;
 }
 .header .mobileMenu .menu .menuTab.Number{
@@ -86,7 +86,7 @@ body{
     width: 10px;
     vertical-align: middle;
 }
-.header .mobileMenu .menu .menuLeft .menuTabs .menuTab:hover a{
+.header .mobileMenu .menu .menuTab:hover a{
    border-bottom: 2px solid black;
     cursor: default;
 }
@@ -96,7 +96,7 @@ body{
     width: 100px;
     height: 80px;
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown{
+.header .mobileMenu .menu .dropDown{
     position: absolute;
     background: #f2f2f2;
     display: none;
@@ -106,21 +106,21 @@ body{
     z-index: 2;
     height: 400px;
 }
-.header .mobileMenu .menu .menuTabs .menuTab:hover .dropDown{
+.header .mobileMenu .menu .menuTab:hover .dropDown{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe{
+.header .mobileMenu .menu .dropDown .dropDownShoe{
     width: 50%;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe img{
+.header .mobileMenu .menu .dropDown .dropDownShoe img{
     width: 300px;
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe .shoeTitle{
+.header .mobileMenu .menu .dropDown .dropDownShoe .shoeTitle{
     font-weight: 600;
     color: #cccccc;
     letter-spacing: 2px;
@@ -129,26 +129,26 @@ body{
     text-align: center;
 
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe:hover img{
+.header .mobileMenu .menu .dropDown .dropDownShoe:hover img{
     width: 320px;
     transition: scale(1);
     transition: .3s ease-in-out
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown .dropDownShoe:hover .shoeTitle{
+.header .mobileMenu .menu .dropDown .dropDownShoe:hover .shoeTitle{
     color: black;
     transition: color .5s;
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown .arrowUp{
+.header .mobileMenu .menu .dropDown .arrowUp{
     width: 100%;
     position: absolute;
     z-index: 3;
     top: 350px;
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown .arrowUp img{
+.header .mobileMenu .menu .dropDown .arrowUp img{
     width: 26px;
     opacity: .5;
 }
-.header .mobileMenu .menu .menuTabs .menuTab .dropDown .arrowUp:hover img{
+.header .mobileMenu .menu .dropDown .arrowUp:hover img{
     opacity: .8;
     transition: opacity .5s;
 }
@@ -165,13 +165,6 @@ body{
     letter-spacing: 2px;
     margin: auto 0;
     max-width: 500px;
-
-
-}
-.header .mobileMenu .menu .menuRight .menuTabs{
-    display: flex;
-    flex-wrap: wrap;
-
 }
 .header .mobileMenu .menu .menuRight .menuTabs .menuTab{
     width: 25%;

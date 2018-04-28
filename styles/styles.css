@@ -915,16 +915,13 @@ body{
         display: flex;
         width: 100%;
     }
-    .header .mobileMenu .menu .menuTabs img{
-
-    }
     .header .mobileMenu .menu .menuLeft .menuTabs .menuTab{
         width: calc(100% - 40px);
         margin: 0 20px;
         border-bottom: 1px solid #e2e2e2;
         text-align: center;
     }
-    .header .mobileMenu .menu .menuLeft .menuTabs .menuTab.Large{
+    .header .mobileMenu .menu .menuLeft .menuTab.Large{
         width: calc(100% - 40px);
         margin: 0 20px;
     }
@@ -952,6 +949,10 @@ body{
     .header .mobileMenu .menu .menuRight .menuTabs .menuTab.US{
         display: flex;
         justify-content: center;
+    }
+    .header .mobileMenu .menu .menuRight .menuTabs .menuTab.US img{
+       margin-left: 0;
+        padding-right: 0;
     }
     .header .mobileMenu .menu .menuTabs{
         display: flex;

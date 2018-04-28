@@ -87,14 +87,14 @@ body{
     vertical-align: middle;
 }
 .header .mobileMenu .menu .menuTab:hover a{
-   border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
     cursor: default;
 }
-.header .mobileMenu .menu .menuTabs .menuTab .bridge{
+.header .mobileMenu .menu .bridge{
     background: transparent;
     position: absolute;
-    width: 100px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
 }
 .header .mobileMenu .menu .dropDown{
     position: absolute;
@@ -881,8 +881,8 @@ body{
         display: none;
         background: white;
         top: 75px;
-        height: 670px;
-        padding: 10px 0 45px 0;
+        height: auto;
+        padding: 10px 0;
     }
     .header .mobileMenu .hamburger .icon{
         display: block;
@@ -909,10 +909,11 @@ body{
         font-weight: 600;
         letter-spacing: 2px;
         margin: auto 0;
+        max-width: none;
     }
-    .header .mobileMenu .menu .menuLeft .menuTabs{
-        display: block;
-        flex-wrap: nowrap;
+    .header .mobileMenu .menu .menuTabs{
+        display: flex;
+        width: 100%;
     }
     .header .mobileMenu .menu .menuTabs img{
 
@@ -936,10 +937,7 @@ body{
         font-weight: 600;
         letter-spacing: 2px;
         margin: auto 0;
-    }
-    .header .mobileMenu .menu .menuRight .menuTabs{
-        display: flex;
-        width: 100%;
+        max-width: none;
     }
     .header .mobileMenu .menu .menuRight .menuTabs .menuTab{
         width: calc(100% - 40px);
@@ -961,6 +959,7 @@ body{
     }
     .header .mobileMenu .menu .menuTabs .menuTab{
         padding: 30px 0;
+        width: 100%;
     }
     .header .mobileMenu .menu .menuTabs .menuTab .menuArrow{
         position: absolute;
@@ -972,6 +971,13 @@ body{
     }
     .header .mobileMenu .menu .menuTabs .menuTab:hover .dropDown{
         display: none;
+    }
+    .header .mobileMenu .menu .bridge{
+        top:-20px;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background: transparent;
     }
     .header .mobileLogo{
         display: block;
